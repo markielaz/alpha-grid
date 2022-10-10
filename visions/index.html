@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Grid - Coming Soon</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="vimeo-wrapper">
+        
+        <iframe src="https://player.vimeo.com/video/696936668?background=1&autoplay=1&loop=1&byline=0&title=0"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <main>
+        <img id="logo" src="./assets/logo.svg" alt="Alpha Grid">
+        <img class="icon corner corner__top--left" src="./assets/greencornertopleft.svg" alt="">
+        <img class="icon corner corner__top--right" src="./assets/greencornertopright.svg" alt="">
+        <img class="icon corner corner__bottom--left" src="./assets/redcornerbottomleft.svg" alt="">
+        <img class="icon corner corner__bottom--right" src="./assets/whitecornerbottomright.svg" alt="">
+        <img class="icon circle__white" src="./assets/whitecircle.svg" alt="">
+        <img class="icon circle circle__green" src="./assets/greencircle.svg" alt="">
+        <img class="icon circle circle__red" src="./assets/redcircle.svg" alt="">
+        <img class="icon cross cross__red" src="./assets/redcross.svg" alt="">
+        <img class="icon cross cross__white" src="./assets/whitecross.svg" alt="">
+        <h1>New website coming soon</h1>
+        <button id="popup" class="cta" onclick="document.getElementById('id01').style.display='block'">See what we do</button>
+        <div class="arrow arrow__wrapper">
+            <img class="arrow arrow__body" src="./assets/whiteline.svg" alt="">
+            <img class="arrow arrow__head" src="./assets/whitearrow.svg" alt="">
+        </div>
+    <footer>
+        <a href="https://visionsdesign.co.uk/" target="_blank"><img src="./assets/websitebyvisions.svg" alt="website by Visions Design"/></a>
+    </footer>
+    <div id="id01" class="modal">
+        <form class="modal-content">
+          <div class="container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&#10006;</span>
+            <h2>Sign Up</h2>
+            <p>Let us know your email address and we'll add you to our newsletter to keep you up to date</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <div class="clearfix">
+              <button type="submit" class="signup">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </main>
+     
+
+</body>
+</html>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
